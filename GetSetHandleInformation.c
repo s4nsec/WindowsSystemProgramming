@@ -59,6 +59,8 @@ int main() {
 	printf("GetHandleInformation dwFlag Result: %d\n", dwFlags);
 
 	printf("GetHandleInformation Result: %d. GetLastError: %d \n", result, ::GetLastError());
+	
+	::CloseHandle(hObject);
 
 	return 0;
 }
